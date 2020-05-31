@@ -20,7 +20,70 @@
         <nav class="main-navigation">
             <ul class="navigation-menu" id="ulnavi">
                 <li><a href="/">HOME</a></li>
-                <li><a href="/portfolio">PORTFOLIO</a></li>
+                <li><a href="/portfolio">PORTFOLIO</a>
+                    <span class="sub_menu-arrow arrow"></span>
+                    <ul class="sub-menu">
+                        <li><a href="#">МЕДЬ</a>
+                            <span class="sub-sub_menu-arrow arrow"></span>
+                            <ul class="sub-sub-menu">
+                                <li><a href="#">ЛИСТ</a></li>
+                                <li><a href="#">КРУГ</a></li>
+                                <li><a href="#">ТРУБА</a></li>
+                                <li><a href="#">ЛЕНТА</a></li>
+                                <li><a href="#">ПРОВОЛОКА</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">ЛАТУНЬ</a>
+                            <span class="sub-sub_menu-arrow arrow"></span>
+                            <ul class="sub-sub-menu">
+                                <li><a href="#">ЛИСТ</a></li>
+                                <li><a href="#">КРУГ</a></li>
+                                <li><a href="#">ТРУБА</a></li>
+                                <li><a href="#">ЛЕНТА</a></li>
+                                <li><a href="#">ПРОВОЛОКА</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">БРОНЗА</a>
+                            <span class="sub-sub_menu-arrow arrow"></span>
+                            <ul class="sub-sub-menu">
+                                <li><a href="#">КРУГ БРАЖ</a></li>
+                                <li><a href="#">КРУГ ОЦС</a></li>
+                                <li><a href="#">ТРУБА БРАЖ</a></li>
+                                <li><a href="#">ТРУБА ОЦС</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">АЛЮМИНИЙ</a>
+                            <span class="sub-sub_menu-arrow arrow"></span>
+                            <ul class="sub-sub-menu">
+                                <li><a href="#">ЛИСТ</a></li>
+                                <li><a href="#">КРУГ</a></li>
+                                <li><a href="#">ТРУБА</a></li>
+                                <li><a href="#">ЛЕНТА</a></li>
+                                <li><a href="#">ПРОВОЛОКА</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">ОЛОВО</a></li>
+                        <li><a href="#">ПРИПОЙ ПОС</a>
+                            <span class="sub-sub_menu-arrow arrow"></span>
+                            <ul class="sub-sub-menu">
+                                <li><a href="#">ПОС-30</a></li>
+                                <li><a href="#">ПОС-40</a></li>
+                                <li><a href="#">ПОС-61</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">СВИНЕЦ</a></li>
+                        <li><a href="#">БАББИТ</a>
+                            <span class="sub-sub_menu-arrow arrow"></span>
+                            <ul class="sub-sub-menu">
+                                <li><a href="#">Б-16</a></li>
+                                <li><a href="#">Б-83</a></li>
+                                <li><a href="#">Б-88</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">ЦИНК</a></li>
+                        <li><a href="#">НИКЕЛЬ</a></li>
+                    </ul>
+                </li>
                 <li><a href="/blog">BLOG</a></li>
                 <li><a href="/aboutus">ABOUT US</a></li>
                 <li><a href="/form">CONTACT</a></li>

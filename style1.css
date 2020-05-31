@@ -16,7 +16,8 @@ body {
     /*min-height: 100vh;*/
 
 }
-main{
+
+main {
     /*flex-grow: 1;*/
 }
 
@@ -46,14 +47,22 @@ header {
     margin-top: 25px;
 }
 
-.navigation-menu li:not(:last-child) {
+.navigation-menu > li:not(:last-child) {
     margin-right: 65px;
 }
 
-.navigation-menu li {
+.navigation-menu >li {
     padding: 20px 10px;
+
 }
 
+.sub-menu li{
+    padding: 10px 5px;
+}
+
+body.touch .sub-menu li{
+    padding: 20px 10px;
+}
 .label {
 
     font-size: 26px;
@@ -69,7 +78,7 @@ header {
 
 }
 
-.navigation-menu li:hover {
+.navigation-menu > li:hover {
     background-color: #ffea00;
     border-radius: 10px;
 }
@@ -77,6 +86,74 @@ header {
 .logo img:hover {
     opacity: 0.5;
     cursor: pointer;
+}
+
+/*sub-navigation-menu*/
+
+.navigation-menu > li {
+    position: relative;
+}
+
+.sub-menu > li {
+    position: relative;
+}
+
+.sub-menu {
+    top: 65px;
+    left: 1px;
+    border-radius: 10px;
+    position: absolute;
+    display: none;
+    width: 200px;
+    background: #2ca5e0;
+    color: white;
+    text-align: center;
+}
+
+
+.sub-sub-menu {
+    position: absolute;
+    display: none;
+    width: 200px;
+    background: #7d7e82;
+    color: orange;
+    left: 200px;
+    top: 0;
+    border-radius: 10px;
+}
+.sub-menu a{
+    color: white;
+}
+
+body.mouse .navigation-menu > li:hover .sub-menu {
+    display: block;
+}
+
+body.mouse .navigation-menu .sub-menu > li:hover .sub-sub-menu {
+    display: block;
+}
+
+.arrow{
+    border: 15px solid transparent;
+    border-top: 15px solid black ;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    display: none;
+
+}
+body.touch .arrow{
+    display: block;
+}
+body.touch .arrow.active{
+    transform: rotate(-180deg);
+}
+
+body.touch .sub-menu.open{
+    display: block;
+}
+body.touch .sub-sub-menu.open{
+    display: block;
 }
 
 /*topfon*/
@@ -405,51 +482,61 @@ header {
     margin-top: 15px;
 
 }
-.about p{
+
+.about p {
     margin-bottom: 15px;
 }
-.about h5{
+
+.about h5 {
     margin-top: 15px;
 }
-.about, .twits, .contact{
+
+.about, .twits, .contact {
     margin: 15px 0 15px 0;
 }
-.main-footer h4,h5{
+
+.main-footer h4, h5 {
     margin-bottom: 15px;
 }
-.about, .twits, .contact{
+
+.about, .twits, .contact {
     margin-left: 15px;
     margin-right: 15px;
 }
 
 
-.forma{
+.forma {
     background: #5b5b6b;
     padding-bottom: 20px;
     padding-top: 20px;
 }
-.forma-container{
+
+.forma-container {
     width: 90%;
     margin: 0 auto;
     text-align: center;
 }
- .form div{
+
+.form div {
     padding: 15px 0;
 
 }
- .form-input input{
-     width: 60%;
-     font-size: 15px;
-     height: 30px;
-     border: 2px solid;
- }
-.form-textare textarea{
+
+.form-input input {
+    width: 60%;
+    font-size: 15px;
+    height: 30px;
+    border: 2px solid;
+}
+
+.form-textare textarea {
     width: 80%;
     font-size: 15px;
     height: 100px;
     border: 2px solid;
 }
-.form-submit button{
+
+.form-submit button {
     font-size: 19px;
     border-radius: 5px;
     background: #007bff;
@@ -458,29 +545,33 @@ header {
     border: 1px solid #007bff;
 }
 
- .inf{
-margin: 10px auto;
+.inf {
+    margin: 10px auto;
     width: 100px;
     height: 20px;
-    background:#5b5b6b;
+    background: #5b5b6b;
 
 }
+
 /*adaptiv footer*/
 
 @media (max-width: 700px) {
-    .footer-container{
+    .footer-container {
         grid-template-columns: auto;
     }
-    .footer-nav ul{
+
+    .footer-nav ul {
         flex-wrap: wrap;
         margin-top: 15px;
         height: auto;
     }
-    .footer-nav li{
+
+    .footer-nav li {
         margin-top: 10px;
         margin-bottom: 10px;
     }
 }
+
 /*adaptiv */
 @media (max-width: 920px) {
     .topfon-container h2 {
@@ -509,6 +600,22 @@ margin: 10px auto;
 
 
     }
+/*выпадающее меню*/
+    .navigation-menu.responce .sub-menu{
+        position: relative;
+        width: 100%;
+        top: 5px;
+    }
+
+    .navigation-menu.responce .sub-sub-menu{
+        position: relative;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+
+
+
 
     .header-container {
         flex-direction: column;
@@ -545,11 +652,12 @@ margin: 10px auto;
 }
 
 @media (max-width: 500px) {
-    .form-input input{
+    .form-input input {
         width: 80%;
 
     }
-    .form-textare textarea{
+
+    .form-textare textarea {
         width: 95%;
 
     }
