@@ -156,6 +156,101 @@ body.touch .sub-sub-menu.open{
     display: block;
 }
 
+
+/*catalog-content*/
+.content-catalog{
+    display: flex;
+    margin: 0 auto;
+    background: aliceblue;
+
+}
+.content-catalog a{
+    text-decoration: none;
+}
+.catalog-link{
+    color: black;
+    font-weight: 600;
+
+}
+.catalog li{
+    list-style: none;
+    border-bottom: 2px solid black ;
+    padding: 10px 0 10px 0;
+    border-left:2px solid black ;
+    border-right:2px solid black ;
+    border-radius: 10px;
+
+}
+.catalog li:first-child{
+    border-top: 2px solid black;
+}
+.catalog >li{
+    position: relative;
+    background: #e5e5eb;
+}
+
+.sub-catalog{
+    position: absolute;
+    display: none;
+    width: 450px;
+    left: 250px;
+    top: 0;
+
+
+}
+.sub-catalog li{
+    background-color: #7bdcb5;
+
+}
+.sub-catalog-link{
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+}
+.name-catalog{
+    text-align: center;
+    background: #2ca5e0;
+    color: white;
+    width: 250px;
+    padding: 10px 0 10px 0;
+    border-radius: 10px;
+}
+
+.catalog{
+    width: 250px;
+    text-align: center;
+
+
+}
+.wrap_catalog{
+    width: 30%;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-bottom: 40px;
+}
+.wrap_content{
+    width: 70%;
+}
+
+body.mouse .catalog >li:hover .sub-catalog{
+    display: block;
+
+
+}
+body.touch .sub-catalog{
+    display: none;
+}
+
+body.touch .sub-catalog.open li{
+    margin: 15px 10px;
+}
+body.touch .sub-catalog.open li:not(:first-child) {
+    border-top: 2px solid black;
+}
+
+/*//////////////////*/
+
+
 /*topfon*/
 .topfon {
     background: url("img/slider_bg.png");
@@ -168,6 +263,8 @@ body.touch .sub-sub-menu.open{
     margin: 0 auto;
     width: 90%;
 }
+
+
 
 .topfon-container h2 {
     background: #ffea00;
@@ -600,6 +697,8 @@ body.touch .sub-sub-menu.open{
 
 
     }
+
+
 /*выпадающее меню*/
     .navigation-menu.responce .sub-menu{
         position: relative;
@@ -642,9 +741,47 @@ body.touch .sub-sub-menu.open{
         width: 100%;
     }
 
+    /*каталог*/
+.content-catalog{
+    display: block;
+}
+
+.wrap_catalog, .wrap_content{
+    width: 100%;
+    margin: 0 auto;
+}
+.catalog {
+    display: none;
 
 }
 
+.name-catalog {
+    width: 100%;
+
+}
+
+.catalog.catalog-responce .sub-catalog {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    display: none;
+}
+
+}
+/*каталог responce*/
+ .catalog.catalog-responce{
+    display: block;
+     width: 100%;
+}
+
+
+ body.touch .sub-catalog.open{
+    display: block;
+ }
+
+
+ /*////////*/
 @media (max-width: 400px) {
     .portfolio-foto-block img {
         width: 100%;

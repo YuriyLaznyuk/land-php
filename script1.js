@@ -2,7 +2,7 @@ document.getElementById('label-click').addEventListener('click'
 , function () {
     setTimeout(function () {
         document.getElementById('ulnavi').classList.toggle('responce');
-    },500);
+    },0);
         // document.getElementById('ulnavi').classList.toggle('responce');
     });
 
@@ -50,6 +50,14 @@ let isMobile = {
 };
 
 
+// каталог респонсив
+
+document.querySelector('.name-catalog').addEventListener(
+    'click',function () {
+        document.querySelector('.catalog').classList
+            .toggle('catalog-responce');
+    }
+);
 // проверка на мобилки
 let body = document.querySelector('body');
 if (isMobile.any()) {
