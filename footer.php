@@ -1,3 +1,37 @@
+</section>
+
+</main>
+<section class="slider">
+    <h4>НАША ПРОДУКЦИЯ</h4>
+    <p>медь, латунь, бронза, алюминий, олово, припой, баббит, свинец, цинк, никель</p>
+
+    <div class="owl-carousel">
+
+        <div><img src="img/slider/Client-1.jpg " alt=""></div>
+        <div><img src="img/slider/Client-2.jpg " alt=""></div>
+        <div><img src="img/slider/Client-3.jpg " alt=""></div>
+        <div><img src="img/slider/Client-4.jpg " alt=""></div>
+        <div><img src="img/slider/Client-5.jpg " alt=""></div>
+        <div><img src="img/slider/Client-6.jpg " alt=""></div>
+        <div><img src="img/slider/Client-7.jpg " alt=""></div>
+        <div><img src="img/slider/Client-8.jpg " alt=""></div>
+        <div><img src="img/slider/Client-8.jpg " alt=""></div>
+        <div><img src="img/slider/Client-8.jpg " alt=""></div>
+        <div><img src="img/slider/Client-8.jpg " alt=""></div>
+        <div><img src="img/slider/Client-8.jpg " alt=""></div>
+        <div><img src="img/slider/Client-8.jpg " alt=""></div>
+        <div><img src="img/slider/Client-1.jpg " alt=""></div>
+        <div><img src="img/slider/Client-2.jpg " alt=""></div>
+        <div><img src="img/slider/Client-3.jpg " alt=""></div>
+        <div><img src="img/slider/Client-4.jpg " alt=""></div>
+        <div><img src="img/slider/Client-5.jpg " alt=""></div>
+        <div><img src="img/slider/Client-6.jpg " alt=""></div>
+        <div><img src="img/slider/Client-7.jpg " alt=""></div>
+        <div><img src="img/slider/Client-8.jpg " alt=""></div>
+
+    </div>
+</section>
+
 </main>
 <footer class="main-footer">
     <div class="footer-container">
@@ -70,16 +104,16 @@
     </div>
     <nav class="footer-nav">
         <ul>
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">PORTFOLIO</a></li>
-            <li><a href="#">BLOG</a></li>
-            <li><a href="#">ABOUT US</a></li>
-            <li><a href="#">CONTACT</a></li>
+            <li><a href="/">ГЛАВНАЯ</a></li>
+            <li><a href="/materiali">МАТЕРИАЛЫ</a></li>
+            <li><a href="/uslugi">УСЛУГИ</a></li>
+            <li><a href="/vtulki">ВТУЛКИ</a></li>
+            <li><a href="/contacts">КОНТАКТЫ</a></li>
         </ul>
     </nav>
 </footer>
 
-<body>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
 <script src="carusel/owl.carousel.min.js"></script>
 <script src="script1.js"></script>

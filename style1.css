@@ -90,11 +90,11 @@ body.touch .sub-menu li{
 
 /*sub-navigation-menu*/
 
-.navigation-menu > li {
+.navigation-menu >li {
     position: relative;
 }
 
-.sub-menu > li {
+.sub-menu >li {
     position: relative;
 }
 
@@ -125,13 +125,22 @@ body.touch .sub-menu li{
     color: white;
 }
 
-body.mouse .navigation-menu > li:hover .sub-menu {
+ body.mouse .navigation-menu > li:hover .sub-menu {
     display: block;
 }
 
 body.mouse .navigation-menu .sub-menu > li:hover .sub-sub-menu {
     display: block;
 }
+
+
+/*body.touch .navigation-menu > li:hover .sub-menu {*/
+/*    display: none;*/
+/*}*/
+
+/*body.touch .navigation-menu .sub-menu > li:hover .sub-sub-menu {*/
+/*    display: none;*/
+/*}*/
 
 .arrow{
     border: 15px solid transparent;
@@ -157,11 +166,19 @@ body.touch .sub-sub-menu.open{
 }
 
 
+body.touch .sub-menu{
+    display: none;
+}
+body.touch .sub-sub-menu{
+    display: none;
+}
+
+
 /*catalog-content*/
 .content-catalog{
     display: flex;
     margin: 0 auto;
-    background: aliceblue;
+    background: #d8dcd4;
 
 }
 .content-catalog a{
@@ -184,7 +201,7 @@ body.touch .sub-sub-menu.open{
 .catalog li:first-child{
     border-top: 2px solid black;
 }
-.catalog >li{
+.catalog li{
     position: relative;
     background: #e5e5eb;
 }
@@ -193,8 +210,9 @@ body.touch .sub-sub-menu.open{
     position: absolute;
     display: none;
     width: 450px;
-    left: 250px;
-    top: 0;
+    left: 248px;
+    top: 0px;
+    z-index: 10;
 
 
 }
@@ -222,14 +240,26 @@ body.touch .sub-sub-menu.open{
 
 
 }
+.catalog .sub-catalog-link:hover{
+    color: red;
+}
+
+.catalog-link.plotn:hover{
+    color: red;
+}
+
+.catalog-link.splav:hover{
+    color: red;
+
+}
 .wrap_catalog{
-    width: 30%;
+    width: 15%;
     margin-top: 40px;
     margin-left: 40px;
     margin-bottom: 40px;
 }
 .wrap_content{
-    width: 70%;
+    width: 85%;
 }
 
 body.mouse .catalog >li:hover .sub-catalog{
@@ -240,7 +270,15 @@ body.mouse .catalog >li:hover .sub-catalog{
 body.touch .sub-catalog{
     display: none;
 }
+body.touch .sub-catalog.open{
+    display: block;
+    position: relative;
+    width: 100%;
+    left: 0;
 
+
+
+}
 body.touch .sub-catalog.open li{
     margin: 15px 10px;
 }
@@ -249,28 +287,32 @@ body.touch .sub-catalog.open li:not(:first-child) {
 }
 
 /*//////////////////*/
-
-
 /*topfon*/
 .topfon {
-    background: url("img/slider_bg.png");
-    background-repeat: repeat;
-    padding-top: 125px;
-    padding-bottom: 200px;
+    /*background: url("img/slider_bg.png");*/
+    /*background-repeat: repeat;*/
+    padding-top: 35px;
+    padding-bottom: 20px;
 }
 
 .topfon-container {
     margin: 0 auto;
-    width: 90%;
+    width: 72%;
 }
-
-
+.topfon-container-context{
+    margin-top: 15px;
+}
+.p-vtulki{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
 
 .topfon-container h2 {
     background: #ffea00;
     display: inline-block;
     text-transform: uppercase;
-    font-size: 70px;
+    font-size: 40px;
     padding: 4px 8px;
     margin-bottom: 10px;
 }
@@ -278,6 +320,12 @@ body.touch .sub-catalog.open li:not(:first-child) {
 .topfon-container .first {
     margin-left: 8px;
     margin-bottom: 2px;
+}
+
+
+.topfon-container .first1 {
+    margin-left: 13px;
+    margin-top: 0px;
 }
 
 .topfon-container h5 {
@@ -291,8 +339,13 @@ body.touch .sub-catalog.open li:not(:first-child) {
 }
 
 /*cartblock*/
+
+.cart{
+    padding-left: 5px;
+}
+
 .cartblock-container {
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
     text-align: center;
 }
@@ -310,7 +363,14 @@ body.touch .sub-catalog.open li:not(:first-child) {
     margin-top: 30px;
     color: #424147;
 }
-
+.uslugi-block{
+    margin-top: 35px;
+}
+.uslugi-type{
+    margin: 5px auto;
+    font-size: 18px;
+    list-style: none;
+}
 .maincarts-block {
     margin-top: 50px;
     margin-bottom: 80px;
@@ -367,7 +427,7 @@ body.touch .sub-catalog.open li:not(:first-child) {
 
 /*portfolio*/
 .main-portfolio {
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
     text-align: center;
 }
@@ -379,6 +439,7 @@ body.touch .sub-catalog.open li:not(:first-child) {
     padding: 3px 5px;
     margin-bottom: 37px;
     display: inline-block;
+    margin-top: 30px;
 }
 
 .portfolio-text p {
@@ -392,8 +453,18 @@ body.touch .sub-catalog.open li:not(:first-child) {
     background: none;
     cursor: pointer;
     outline: none;
+    font-size: 16px;
 
 
+
+}
+.btn-material{
+    padding: 3px;
+}
+.btn-material:hover{
+    background:black ;
+    color: #ffea00;
+    border-radius: 5px;
 }
 
 .portfolio-btn {
@@ -415,7 +486,7 @@ body.touch .sub-catalog.open li:not(:first-child) {
 }
 
 /*portfolio-foto adaptiv*/
-@media (max-width: 1110px) {
+@media (max-width: 1446px) {
     .maincarts-block {
         /*flex-direction: column;*/
         flex-wrap: wrap;
@@ -601,9 +672,41 @@ body.touch .sub-catalog.open li:not(:first-child) {
     margin-right: 15px;
 }
 
+/*contacts*/
+.wrap-contacts{
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.tel-namb{
+    padding: 5px 0 5px 0;
+}
+.contacts-tel{
+    margin-top: 15px;
+}
+.ico-tel, .ico-adr{
+    margin: 0 5px 0 5px;
+    display: inline-block;
+}
+.tel-namb{
+    display: flex;
+    margin: 3px;
+}
+.tel-namb .tel{
+    margin-top: 5px;
+}
+.ico-oper{
+    margin-left: 8px;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    margin-bottom: 5px;
+    margin-top: 7px;
+}
 
 .forma {
-    background: #5b5b6b;
+    /*background: #5b5b6b;*/
     padding-bottom: 20px;
     padding-top: 20px;
 }
@@ -639,9 +742,18 @@ body.touch .sub-catalog.open li:not(:first-child) {
     background: #007bff;
     padding: 5px;
     color: white;
-    border: 1px solid #007bff;
+    /*border: 1px solid #007bff;*/
+    outline: none;
+    border: 0;
 }
 
+
+.form-submit button:hover {
+    cursor: pointer;
+    color: red;
+    border-radius: 20px;
+
+}
 .inf {
     margin: 10px auto;
     width: 100px;
@@ -649,7 +761,14 @@ body.touch .sub-catalog.open li:not(:first-child) {
     background: #5b5b6b;
 
 }
+.contacts-map  {
+    width: 78%;
+    height: 455px;
+    /*overflow: auto;*/
+    margin: 15px auto 15px auto;
 
+
+}
 /*adaptiv footer*/
 
 @media (max-width: 700px) {
@@ -670,9 +789,21 @@ body.touch .sub-catalog.open li:not(:first-child) {
 }
 
 /*adaptiv */
-@media (max-width: 920px) {
+
+
+@media (max-width: 1100px) {
+
+    .contacts-map  {
+        width: 100%;
+
+
+
+    }
+    .wrap_content{
+        width: 100%;
+    }
     .topfon-container h2 {
-        font-size: 42px;
+        font-size: 32px;
     }
 
     .topfon-container h5 {
@@ -697,8 +828,6 @@ body.touch .sub-catalog.open li:not(:first-child) {
 
 
     }
-
-
 /*выпадающее меню*/
     .navigation-menu.responce .sub-menu{
         position: relative;
@@ -741,50 +870,32 @@ body.touch .sub-catalog.open li:not(:first-child) {
         width: 100%;
     }
 
-    /*каталог*/
+    /*content catalog*/
 .content-catalog{
-    display: block;
+    flex-direction: column;
 }
-
-.wrap_catalog, .wrap_content{
-    width: 100%;
-    margin: 0 auto;
-}
-.catalog {
+.catalog{
     display: none;
-
-}
-
-.name-catalog {
     width: 100%;
-
 }
-
-.catalog.catalog-responce .sub-catalog {
-    position: relative;
-    left: 0;
-    top: 0;
+.wrap_catalog{
+    margin: 0;
     width: 100%;
-    display: none;
 }
-
+.wrap_catalog .name-catalog{
+    width: 100%;
 }
-/*каталог responce*/
- .catalog.catalog-responce{
+.catalog.responce-catalog{
     display: block;
-     width: 100%;
+}
 }
 
-
- body.touch .sub-catalog.open{
-    display: block;
- }
-
-
- /*////////*/
 @media (max-width: 400px) {
     .portfolio-foto-block img {
         width: 100%;
+    }
+    .topfon-container h2 {
+        font-size: 26px;
     }
 }
 
@@ -797,5 +908,37 @@ body.touch .sub-catalog.open li:not(:first-child) {
     .form-textare textarea {
         width: 95%;
 
+    }
+}
+@media (max-width:632px ) {
+    .cart{
+        padding-left: 0;
+    }
+}
+
+/*таблицы металлы справочник*/
+#main{
+    width: 80%;
+    margin: 0 auto;
+    /*overflow: auto;*/
+    /*text-align: center;*/
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 1100px) {
+    #main{
+        /*width: auto;*/
+        width: 90%;
+    }
+}
+
+.metal{
+    float: left;
+    margin-right: 10px;
+}
+@media (min-width: 1380px) and (max-width: 1800px){
+    #main{
+        width: 90%;
     }
 }

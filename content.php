@@ -1,4 +1,4 @@
-<main class="main-content">
+<!--<main class="main-content">-->
     <section class="topfon">
         <div class="topfon-container">
             <div><h2 class="first">We believe</h2></div>
@@ -115,4 +115,4 @@
 
         </div>
     </section>
-</main>
+<!--</main>-->

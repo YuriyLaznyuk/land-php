@@ -5,6 +5,8 @@ document.getElementById('label-click').addEventListener('click'
     },0);
         // document.getElementById('ulnavi').classList.toggle('responce');
     });
+//
+
 
 // portfolio
 
@@ -28,6 +30,7 @@ if($(window).width() < 420){
     $(".owl-carousel").owlCarousel({items:3});
 }
 
+
 let isMobile = {
     Android: function () {
         return navigator.userAgent.match(/Android/i);
@@ -49,15 +52,14 @@ let isMobile = {
     }
 };
 
-
-// каталог респонсив
-
 document.querySelector('.name-catalog').addEventListener(
     'click',function () {
         document.querySelector('.catalog').classList
-            .toggle('catalog-responce');
+            .toggle('responce-catalog');
     }
 );
+
+
 // проверка на мобилки
 let body = document.querySelector('body');
 if (isMobile.any()) {
